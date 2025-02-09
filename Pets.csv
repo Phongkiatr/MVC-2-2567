@@ -10,7 +10,7 @@ ID,Type,LastCheckup,Vaccine Count,Fireproof Certificate,Smoke Pollution Level,Fl
 90123456,Owl,12/04/2023,4,,,200
 11223344,Phoenix,23/01/2025,5,False,,
 22334455,Dragon,11/08/2023,3,,70,
-33445566,Owl,07/10/2024,2,,,130
+33445566,Owl,07/10/2024,2,,,130w
 44556677,Phoenix,14/02/2024,4,TRUE,,
 55667788,Dragon,19/12/2025,1,,95.75,
 66778899,Owl,02/03/2023,5,,,180
