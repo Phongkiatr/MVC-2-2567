@@ -1,10 +1,10 @@
 package Model;
 
-public abstract class Pet { // Super Class
+public abstract class Pet {
     protected String id;
-    protected String type;
-    protected String lastCheckup;
-    protected int vaccineCount;
+    protected String type; // ประเภทของสัตว์ (Dragon, Owl, Phoenix)
+    protected String lastCheckup; // วันที่ตรวจสุขภาพล่าสุด
+    protected int vaccineCount; // จำนวนวัคซีนที่ได้รับ
 
     public Pet(String id, String type, String lastCheckup, int vaccineCount) {
         this.id = id;
@@ -15,5 +15,7 @@ public abstract class Pet { // Super Class
 
     public String getType() { return type; }
     public String getId() { return id; }
-    public abstract boolean isValid(); // Abstact Method เพื่อให้เป็นการสร้างเงื่อนไขที่แตกต่างกันไปในสัตว์แต่ละชนิด
+
+    // ฟังก์ชันเพื่อตรวจสอบเงื่อนไขการยอมรับตามชนิดของสัตว์ที่แตกต่างไปแต่ละชนิด
+    public abstract boolean isValid();
 }

@@ -1,7 +1,7 @@
 package Model;
 
 public class Phoenix extends Pet {
-    private boolean fireProofCertificate;
+    private boolean fireProofCertificate; // ใบรับรองไฟไม่ลาม
 
     public Phoenix(String id, String lastCheckup, int vaccineCount, boolean fireProofCertificate) {
         super(id, "Phoenix", lastCheckup, vaccineCount);

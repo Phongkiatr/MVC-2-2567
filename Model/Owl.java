@@ -1,7 +1,7 @@
 package Model;
 
 public class Owl extends Pet {
-    private double flightDistance;
+    private double flightDistance; // ระยะทางบินได้โดยไม่ทานข้าว
 
     public Owl(String id, String lastCheckup, int vaccineCount, double flightDistance) {
         super(id, "Owl", lastCheckup, vaccineCount);

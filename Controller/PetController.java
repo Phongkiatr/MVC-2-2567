@@ -15,10 +15,10 @@ import java.util.List;
 import java.util.Map;
 
 public class PetController {
-    private int acceptedCount = 0;
-    private int rejectedCount = 0;
-    private Map<String, Integer> acceptedByType = new HashMap<>();
-    private Map<String, Integer> rejectedByType = new HashMap<>();
+    private int acceptedCount = 0; // จำนวนสัตว์ทั้งหมดที่ผ่านการยอมรับ
+    private int rejectedCount = 0; // จำนวนสัตว์ทั้งหมดที่ถูกปฏิเสธ
+    private Map<String, Integer> acceptedByType = new HashMap<>(); // จำนวนสัตว์ที่ผ่านการยอมรับ แยกตามแต่ละประเภท
+    private Map<String, Integer> rejectedByType = new HashMap<>(); // จำนวนสัตว์ที่ถูกปฏิเสธ แยกตามแต่ละประเภท
     private SummaryView summaryView = new SummaryView();
     private PetDataModel petDataModel = new PetDataModel();
 
