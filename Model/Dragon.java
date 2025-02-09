@@ -9,7 +9,7 @@ public class Dragon extends Pet {
     }
 
     @Override
-    public boolean isValid() {
+    public boolean isValid() { // ตรวจสอบเงื่อนไข "ระดับมลพิษที่เกิดจากควัน" <= 70%
         return smokePollution <= 70.0;
     }
 }

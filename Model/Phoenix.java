@@ -9,7 +9,7 @@ public class Phoenix extends Pet {
     }
 
     @Override
-    public boolean isValid() {
+    public boolean isValid() { // ตรวจสอบเงื่อนไข "ใบรับรองไฟไม่ลาม"
         return fireProofCertificate;
     }
 }

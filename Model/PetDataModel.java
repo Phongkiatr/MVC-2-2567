@@ -20,15 +20,15 @@ public class PetDataModel { // การอ่านข้อมูลจาก�
                 int vaccineCount = Integer.parseInt(data[3]);
 
                 switch (type) {
-                    case "Phoenix":
+                    case "Phoenix": // ถ้าเป็น Pheonix ให้อ่านข้อมูลจากช่อง Column ที่ 4 (Fireproof Certificate)
                         boolean fireProof = Boolean.parseBoolean(data[4]);
                         pets.add(new Phoenix(id, lastCheckup, vaccineCount, fireProof));
                         break;
-                    case "Dragon":
+                    case "Dragon": // ถ้าเป็น Dragon ให้อ่านข้อมูลจากช่อง Column ที่ 5 (Smoke Pollution Level)
                         double smokePollution = Double.parseDouble(data[5]);
                         pets.add(new Dragon(id, lastCheckup, vaccineCount, smokePollution));
                         break;
-                    case "Owl":
+                    case "Owl": // ถ้าเป็น Owl ให้อ่านข้อมูลจากช่อง Column ที่ 6 (Flight Distance)
                         double flightDistance = Double.parseDouble(data[6]);
                         pets.add(new Owl(id, lastCheckup, vaccineCount, flightDistance));
                         break;

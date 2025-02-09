@@ -15,5 +15,5 @@ public abstract class Pet { // Super Class
 
     public String getType() { return type; }
     public String getId() { return id; }
-    public abstract boolean isValid();
+    public abstract boolean isValid(); // Abstact Method เพื่อให้เป็นการสร้างเงื่อนไขที่แตกต่างกันไปในสัตว์แต่ละชนิด
 }
