@@ -30,7 +30,7 @@ public class PetController {
     public void processPet(Pet pet) {
         if (pet.isValid()) {
             acceptedCount++;
-            acceptedByType.put(pet.getType(), acceptedByType.getOrDefault(pet.getType(), 0) + 1);
+            acceptedByType.put(pet.getPetType(), acceptedByType.getOrDefault(pet.getPetType(), 0) + 1);
 
             // เรียกใช้งาน showAccepted() แยกตาม View ของสัตว์แต่ละประเภท
             if (pet instanceof Dragon) {
@@ -43,7 +43,7 @@ public class PetController {
 
         } else {
             rejectedCount++;
-            rejectedByType.put(pet.getType(), rejectedByType.getOrDefault(pet.getType(), 0) + 1);
+            rejectedByType.put(pet.getPetType(), rejectedByType.getOrDefault(pet.getPetType(), 0) + 1);
 
             // เรียกใช้งาน showRejected() แยกตาม View ของสัตว์แต่ละประเภท
             if (pet instanceof Dragon) {

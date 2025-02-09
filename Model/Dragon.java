@@ -1,15 +1,15 @@
 package Model;
 
 public class Dragon extends Pet {
-    private double smokePollution; // ระดับมลพิษที่เกิดจากควัน
+    private double smokePollutionLevel; // ระดับมลพิษที่เกิดจากควัน
 
     public Dragon(String id, String lastCheckup, int vaccineCount, double smokePollution) {
         super(id, "Dragon", lastCheckup, vaccineCount);
-        this.smokePollution = smokePollution;
+        this.smokePollutionLevel = smokePollution;
     }
 
     @Override
     public boolean isValid() { // ตรวจสอบเงื่อนไข "ระดับมลพิษที่เกิดจากควัน" <= 70%
-        return smokePollution <= 70.0;
+        return smokePollutionLevel <= 70.0;
     }
 }
