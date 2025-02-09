@@ -12,4 +12,8 @@ public class Dragon extends Pet {
     public boolean isValid() { // ตรวจสอบเงื่อนไข "ระดับมลพิษที่เกิดจากควัน" <= 70%
         return smokePollutionLevel <= 70.0;
     }
+
+    public double getSmokePollutionLevel() {
+        return smokePollutionLevel;
+    }
 }

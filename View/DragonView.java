@@ -8,6 +8,6 @@ public class DragonView {
     }
 
     public void showRejected(Dragon pet) {
-        System.out.println("Rejected Dragon: ID " + pet.getPetID() + " (Smoke Pollution Level > 70%)");
+        System.out.println("Rejected Dragon: ID " + pet.getPetID() + " (Smoke Pollution Level " + pet.getSmokePollutionLevel() + "% > 70%)");
     }
 }

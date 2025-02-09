@@ -12,4 +12,8 @@ public class Owl extends Pet {
     public boolean isValid() { // ตรวจสอบเงื่อนไข "ระยะทางบินได้โดยไม่ทานข้าว" >= 100 km.
         return flightDistance >= 100.0;
     }
+
+    public double getFlightDistance() {
+        return flightDistance;
+    }
 }
